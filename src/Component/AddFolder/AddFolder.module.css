@@ -1,0 +1,46 @@
+.add {
+    margin: 50px;
+    border: 1px solid #ddd;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.add h4{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.add input{
+    border: none;
+    border-bottom: 2px solid cyan;
+    margin-bottom: 10px;
+}
+
+.add input:focus {
+    outline: none;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cancel {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create {
+    background-color: greenyellow;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

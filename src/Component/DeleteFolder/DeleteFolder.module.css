@@ -1,0 +1,37 @@
+.cut {
+    margin: 50px;
+    border: 1px solid #ddd;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cut h4{
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cancel {
+    background-color: greenyellow;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

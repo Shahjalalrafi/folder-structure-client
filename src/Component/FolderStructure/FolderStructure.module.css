@@ -1,0 +1,24 @@
+.allFolder {
+    display: flex;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.folderName {
+    flex-basis: 50%;
+    color: red;
+    font-weight: bold;
+}
+
+.folderCreate {
+    flex-basis: 50%;
+    color: greenyellow;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.folderCreate span {
+    font-weight: 800;
+    color: red;
+}

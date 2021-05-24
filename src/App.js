@@ -1,23 +1,46 @@
 import logo from './logo.svg';
 import './App.css';
+import FolderStructure from './Component/FolderStructure/FolderStructure';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import AddFolder from './Component/AddFolder/AddFolder';
+import DeleteFolder from './Component/DeleteFolder/DeleteFolder';
+import NestedFolder from './Component/NestedFolder/NestedFolder';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route path='/folderStructure'>
+            <FolderStructure />
+          </Route>
+
+          <Route path='/addFolder'>
+              <AddFolder />
+          </Route>
+          
+          <Route path='/deleteFolder'>
+              <DeleteFolder />
+          </Route>
+
+          <Route path='/addFolder/:id'>
+              <NestedFolder />
+          </Route>
+
+          <Route exact path='/'>
+            <FolderStructure />
+          </Route>
+
+
+
+        </Switch>
+      </Router>
+      
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.folder {
+    display: flex;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.folderName {
+    flex-basis: 50%;
+    color: black;
+    font-weight: bold;
+}
+
+.folderCreate {
+    flex-basis: 50%;
+    color: green;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+}
