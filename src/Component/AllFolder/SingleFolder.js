@@ -5,8 +5,9 @@ import styles from './SingleFolder.module.css'
 const SingleFolder = ({ details }) => {
     const {name, _id} = details
 
-    const handleDelete = (_id) => {
-        fetch(`http://localhost:5050/folderDelete/${_id}`, {
+    const handleDelete = (id) => {
+        console.log(id)
+        fetch(`http://localhost:5050/folderDelete/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())
@@ -20,10 +21,10 @@ const SingleFolder = ({ details }) => {
      return (
         <div className={styles.folder}>
             <div className={styles.folderName}>
-                {name}<button className={styles.delete} onClick={handleDelete}>X</button>
+                {name}<button className={styles.delete} onClick={() => handleDelete(_id)}>X</button>
             </div>
             <div className={styles.folderCreate}>
-                <Link style={{ color: 'green', textDecoration: 'none' }} to={`/addFolder/${_id}`}><span>+</span> NEW</Link>
+                <Link style={{ color: 'green', textDecoration: 'none' }} to={`/addFolder`}><span>+</span> NEW</Link>
             </div>
         </div>
     );

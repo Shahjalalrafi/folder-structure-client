@@ -24,13 +24,13 @@ function App() {
               <AddFolder />
           </Route>
           
-          <Route path='/deleteFolder'>
+          <Route path='/deleteFolder/:id'>
               <DeleteFolder />
           </Route>
-
+{/* 
           <Route path='/addFolder/:id'>
               <NestedFolder />
-          </Route>
+          </Route> */}
 
           <Route exact path='/'>
             <FolderStructure />
