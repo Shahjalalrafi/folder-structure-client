@@ -4,7 +4,7 @@ import SingleFolder from './SingleFolder';
 const AllFolder = () => {
     const [folders, setFolders] = useState([])
 
-    fetch('http://localhost:5050/folder')
+    fetch('https://peaceful-river-84147.herokuapp.com/folder')
     .then(res => res.json())
     .then(data => setFolders(data))
 

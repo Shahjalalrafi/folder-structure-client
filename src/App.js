@@ -1,15 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import FolderStructure from './Component/FolderStructure/FolderStructure';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import AddFolder from './Component/AddFolder/AddFolder';
 import DeleteFolder from './Component/DeleteFolder/DeleteFolder';
-import NestedFolder from './Component/NestedFolder/NestedFolder';
 
 function App() {
   return (

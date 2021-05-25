@@ -7,7 +7,7 @@ const SingleFolder = ({ details }) => {
 
     const handleDelete = (id) => {
         console.log(id)
-        fetch(`http://localhost:5050/folderDelete/${id}`, {
+        fetch(`https://peaceful-river-84147.herokuapp.com/folderDelete/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())

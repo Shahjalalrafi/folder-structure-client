@@ -4,8 +4,6 @@ import AllFolder from '../AllFolder/AllFolder';
 import styles from './FolderStructure.module.css'
 
 const FolderStructure = () => {
-
-
     return (
         <div>
             <h2>FOLDER STRUCTURE</h2>

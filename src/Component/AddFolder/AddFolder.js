@@ -10,7 +10,7 @@ const AddFolder = () => {
         const infoDetails = {
             name: name,
         }
-        fetch('http://localhost:5050/addFolder', {
+        fetch('https://peaceful-river-84147.herokuapp.com/addFolder', {
             method: "POST",
             headers :{
                 'content-type': 'application/json'
